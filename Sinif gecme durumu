@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+
+        int mat, turkce, fizik, kimya, muzik;
+        Scanner ders = new Scanner(System.in);
+        System.out.print("Matematik notunuzu giriniz :");
+        mat = ders.nextInt();
+        int ders1=(mat>100 ||mat<0)? 0: mat;
+        System.out.print("Turkce notunuzu giriniz :");
+        turkce = ders.nextInt();
+        int ders2=(turkce>100 || turkce<0)? 0:turkce;
+        System.out.print("Fizik notunuzu giriniz :");
+        fizik = ders.nextInt();
+        int ders3=(fizik>100 || fizik<0)? 0:fizik;
+        System.out.print("Kimya notunuzu giriniz :");
+        kimya = ders.nextInt();
+        int ders4=(kimya>100 || kimya<0)? 0:kimya;
+        System.out.print("Muzik notunuzu giriniz :");
+        muzik = ders.nextInt();
+        int ders5=(muzik>100 || muzik<0)? 0:muzik;
+        double ortalama = (ders1 + ders2 + ders3 + ders4 + ders5) / 5;
+        if (ortalama <= 55) {
+            System.out.println("Sinifta kaldiniz.");
+        } else {
+            System.out.println("Sinifi gectiniz");
+        }
+        System.out.println("Ortalamaniz :"+ortalama);
+    }
+}
